@@ -12,7 +12,7 @@ def get():
 
 @application.route('/', methods=['POST'])
 def post():
-    return Response(json.dumps({'Output': 'Hello World'}), mimetype='application/json', status=200)
+    return render_template("calculator.html")
 
 if __name__ == '__main__':
     flaskrun(application)
