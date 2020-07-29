@@ -8,11 +8,11 @@ application = Flask(__name__)
 
 @application.route('/', methods=['GET'])
 def get():
-    return render_template("calculator.html")
+    return "hola mundo"
 
 @application.route('/', methods=['POST'])
 def post():
-    return render_template("calculator.html")
+    return "hola mundo"
 
 if __name__ == '__main__':
     flaskrun(application)
