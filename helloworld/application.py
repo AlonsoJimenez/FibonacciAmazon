@@ -7,13 +7,10 @@ from helloworld.flaskrun import flaskrun
 
 application = Flask(__name__)
 
-@application.route('/', methods=['GET'])
+@application.route('/')
 def get():
     return render_template("calculator.html")
 
-@application.route('/', methods=['POST'])
-def post():
-    return render_template("calculator.html")
 
 if __name__ == '__main__':
     flaskrun(application)
