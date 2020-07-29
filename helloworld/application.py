@@ -9,11 +9,11 @@ application = Flask(__name__)
 
 @application.route('/', methods=['GET'])
 def get():
-    return Response(render_template("calculator.html"), mimetype='text/html', status=200)
+    return render_template("calculator.html")
 
 @application.route('/', methods=['POST'])
 def post():
-    return Response(render_template("calculator.html"), mimetype='text/html', status=200)
+    return render_template("calculator.html")
 
 if __name__ == '__main__':
     flaskrun(application)
