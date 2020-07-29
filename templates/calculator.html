@@ -1,1 +1,31 @@
-<html><head><title>Numero de Fibonacci</title></head</html>
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <h2>Fibonacci</h2>
+    <input type="text" placeholder="Escribe un número" id="myText"><br><br>
+    <input type="button" name="name" value="enviar" onclick="fibonacci(parseInt(document.getElementById('myText').value));">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function fibonacci (x) {
+        alert(x);
+        if(x){
+          y = fiboaux(x);
+          return alert(y);
+        }else {
+          return alert("Índice inválido.");
+        }
+      }
+      function fiboaux(x){
+        if(x==0){
+          return x;
+        }else if(x==1){
+          return x;
+        }else{
+          return fiboaux(x-1)+fiboaux(x-2);
+        }
+      }
+    </script>
+  </body>
+</html>
